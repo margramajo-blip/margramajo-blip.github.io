@@ -1,0 +1,27 @@
+:root { --texto: #1c2233; --tenue: #5b6478; --borde: #e3e6ee; --acento: #c25f3f; --fondo: #ffffff; --suave: #f6f7fa; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--fondo); color: var(--texto);
+  font: 16px/1.65 "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+header, main, footer { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+header {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px;
+  padding-top: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--borde);
+}
+.marca { font-weight: 700; font-size: 20px; color: var(--texto); text-decoration: none; letter-spacing: .2px; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+nav a { color: var(--tenue); text-decoration: none; font-size: 15px; }
+nav a:hover, nav a[aria-current="page"] { color: var(--texto); }
+main { padding-top: 40px; padding-bottom: 48px; }
+h1 { font-size: 32px; line-height: 1.25; margin: 0 0 12px; }
+h2 { font-size: 20px; margin: 36px 0 8px; }
+p, li { color: var(--texto); }
+.bajada { color: var(--tenue); font-size: 18px; margin-top: 0; }
+.nota { color: var(--tenue); font-size: 14px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+a { color: var(--acento); }
+.caja { background: var(--suave); border: 1px solid var(--borde); border-radius: 10px; padding: 16px 20px; margin-top: 24px; }
+footer { border-top: 1px solid var(--borde); padding-top: 20px; padding-bottom: 40px; color: var(--tenue); font-size: 14px; }
+footer a { color: var(--tenue); margin-right: 16px; }
